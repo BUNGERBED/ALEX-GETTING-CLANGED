@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Example 6-1</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="default6.css" />
+  </head>
+
+  <body>
+  <h1>EventListener: Example 6-1 toggle</h1>
+  <h2>pet alex torki borkis head</h2>
+  <div id="div1">
+    <p><img id="message" src="turk.png" width="500" height="300"></p>
+  </div>
+
+  <script>
+    function out() {
+      let msg = document.getElementById("message");
+      msg.src = 'turk.png';
+    }
+    function over() {
+      let audio = new Audio("clang.mp3"); 
+      let msg = document.getElementById('message');
+      msg.src = 'turk2.png';
+    if (audio.paused) { // if the audio is paused, play it
+      audio.play();
+    } else { // if the audio is playing, pause it
+      audio.pause();
+  }
+
+    }
+
+    let division = document.querySelector("#div1");
+    division.addEventListener("mouseleave", out);
+    division.addEventListener("mouseover", over);
+  
+
+      /* Define function and then define the eventlistenet*/
+      /*
+      function showMsg() {
+        let msg = document.querySelector("#message");
+        msg.classList.toggle("reveal");
+      }
+
+      let division = document.querySelector("#div1");
+      division.addEventListener("click", showMsg);
+*/
+      /* OR using function directly inside the addEventListener */
+      /*
+            let division = document.querySelector("#div1");
+            division.addEventListener("click", function () {
+              let msg = document.querySelector("#message");
+              msg.classList.toggle("reveal");
+            });
+
+            */
+
+      /* OR using arrow function notation */
+      /*
+            let division = document.querySelector("#div1");
+            division.addEventListener("click", () => {
+              let msg = document.querySelector("#message");
+              msg.classList.toggle("reveal");
+            });
+    */
+
+      /* OR using arrow function with event object */
+    
+      
+    </script>
+  </body>
+</html>

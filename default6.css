@@ -1,0 +1,36 @@
+h1,
+h2 {
+  text-align: center;
+  padding: 10px;
+}
+body {
+  background: radial-gradient(
+    circle farthest-corner at 92.3% 71.5%,
+    rgba(83, 138, 214, 1) 0%,
+    rgba(134, 231, 214, 1) 90%
+  );
+}
+#div1 {
+  margin: 0 auto;
+  border: 1px solid black;
+  border-radius: 50%;
+  font-size: 2em;
+  background-color: blue;
+  text-align: center;
+  color: #ffffff;
+  width: 40%;
+}
+/* example 6-1*/
+
+/*.....*/
+
+#div2 {
+  margin: 0 auto;
+  border: 10px solid black;
+  border-radius: 50%;
+  font-size: 1.5em;
+  background-color: rgb(220, 62, 62);
+  text-align: center;
+  color: #ffffff;
+  width: 40%;
+}
